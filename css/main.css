@@ -13,24 +13,28 @@ nav .nav-link:hover {
 @media screen and (min-width: 1024px) {
   header {
     margin: 0 auto 3rem auto;
-    width: 78%;
+    width: min(1140px, 78%);
   }
   .nav-link {
     padding-right: 0 !important;
     margin-left: 2.3rem;
     color: hsl(236, 13%, 42%);
   }
+  .navbar-nav {
+    justify-content: flex-end;
+  }
   .list-section-item {
     margin-top: 30px;
   }
   main {
-    width: 78%;
+    width: min(1140px, 78%);
     grid-template-columns: auto auto auto;
     grid-template-areas: "picture picture new-section" "main-title main-text new-section" "e f g";
   }
   .main-article img {
     height: 300px;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
@@ -217,7 +221,8 @@ div.main-article a:hover {
 .list-section-item img {
   height: 100%;
   width: 103px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .list-section-item h3 {
   font-weight: bold;

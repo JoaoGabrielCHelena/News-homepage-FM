@@ -23,7 +23,7 @@ nav
     
 
 @media screen and ( min-width: 1024px )
-    $page-width: 78%
+    $page-width: min(1140px, 78%)
 
     header
         margin: 0 auto 3rem auto
@@ -31,6 +31,9 @@ nav
 
     .nav-link 
         @include expanded-nav-link()
+
+    .navbar-nav
+        justify-content: flex-end
 
     .list-section-item
         margin-top: 30px
